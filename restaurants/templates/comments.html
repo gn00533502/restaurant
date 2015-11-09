@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Comment </title>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <style>
+        th { text-align: center; }
+        div.center_padding {
+            text-align: center;
+            padding: 128px 15px;
+        }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">MySite</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="center_padding">
+                <h2>{{ r.name }}的評價</h2>
+                {% if r.comment_set.all %}
+                <p>目前共有{{ r.comment_set.all|length }}條評價</p>
+                <table class="table table-hover">
+                    <tr>
+                        <th>留言者</th>
+                        <th>時間</th>
+                        <th>評價</th>
+                    </tr>
+                    {% for c in r.comment_set.all %}
+                    <tr>
+                        <td> {{ c.visitor }} </td>
+                        <td> {{ c.date_time | date:"F j, Y" }} </td>
+                        <td> {{ c.content }} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% else %}
+                <p>無評價</p>
+                {% endif %}
+
+                <br /><br />
+                {% for e in errors %}
+                    <p style="color:red;">{{ e }}</p>
+                {% endfor %}
+
+                <form action="" method="post" class="form-horizontal" role="form" style="width:33%; margin:auto; text-align:left">{% csrf_token %}
+                    <div class="form-group">
+                    <label for="visitor">留言者:</label>
+                    <input id="visitor" type="text" name="visitor" class="form-control" value = "{{visitor}}">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">電子信箱:</label>
+                    <input id="email" type="text" name="email" class="form-control"  value = "{{email}}">
+                    </div>
+                    <div class="form-group">
+                    <label for="content">評價:</label>
+                    <textarea id="content" rows="10" cols="48" name="content" class="form-control"  value = "{{content}}"></textarea>
+                    </div>
+                    <input type="submit" value="給予評價" class="btn btn-default">
+                </form>
+            </div>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
