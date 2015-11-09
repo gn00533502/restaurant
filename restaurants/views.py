@@ -7,6 +7,7 @@ from restaurants.models import Restaurant, Comment
 #date_time用的
 from django.utils import timezone
 from django.template import RequestContext
+from restaurants.forms import CommentForm
 
 def menu(request):
     """retrun a menu response
@@ -58,4 +59,6 @@ def comment(request, restaurant_id):
             )
             #填寫成功將欄位清空
             visitor, email, content = ("","","")
+    #產生一個非綁定表單，將生成html碼
+    f = CommentForm()
     return render_to_response('comments.html', RequestContext(request,locals()))
