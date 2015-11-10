@@ -11,6 +11,9 @@
             text-align: center;
             padding: 128px 15px;
         }
+        .errorlist {
+            color: red;
+        }
         </style>
     </head>
     <body>
@@ -26,6 +29,13 @@
                     </button>
                     <a class="navbar-brand" href="#">MySite</a>
                 </div>
+                <!--div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div--><!--/.nav-collapse -->
             </div>
         </nav>
 
@@ -60,9 +70,21 @@
                 {% endif %}
 
                 <form action="" method="post" class="form-horizontal" role="form" style="width:33%; margin:auto; text-align:left">{% csrf_token %}
-                <table>
-                    {{ f.as_table}}
-                </table>
+                    <div class="form-group">
+                    <label for="visitor">留言者:</label>
+                    {{ f.visitor }}
+                    {{ f.visitor.errors }}
+                    </div>
+                    <div class="form-group">
+                        <label for="email">電子信箱:</label>
+                    {{ f.email }}
+                    {{ f.email.errors }}
+                    </div>
+                    <div class="form-group">
+                    <label for="content">評價:</label>
+                    {{ f.content }}
+                    {{ f.content.errors }}
+                    </div>
                     <input type="submit" value="給予評價" class="btn btn-default">
                 </form>
             </div>
