@@ -39,9 +39,9 @@ def comment(request, restaurant_id):
     if request.POST:
         f = CommentForm(request.POST)
         if f.is_valid():
-            visitor = f.cleaned.data['visitor']
-            content = f.cleaned.data['content']
-            email = f.cleaned.data['email']
+            visitor = f.cleaned_data['visitor']
+            content = f.cleaned_data['content']
+            email = f.cleaned_data['email']
             date_time = timezone.localtime(timezone.now())
             c = Comment.objects.create(
                 visitor=visitor, email=email,
