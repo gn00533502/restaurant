@@ -50,7 +50,8 @@ def comment(request, restaurant_id):
                 restaurant=r
             )
             #產生一個非綁定表單，將生成html碼
-            f = CommentForm()
+            #設定初始值
+            f = CommentForm(initial=('content':'我沒意見'))
     else:
-        f = CommentForm()
+        f = CommentForm(initial=('content':'我沒意見'))
     return render_to_response('comments.html', RequestContext(request,locals()))
