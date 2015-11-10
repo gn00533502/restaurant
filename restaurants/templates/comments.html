@@ -53,9 +53,11 @@
                 {% endif %}
 
                 <br /><br />
-                {% for e in errors %}
-                    <p style="color:red;">{{ e }}</p>
-                {% endfor %}
+                {% if f.errors %}
+                <p style="color:red;">
+                    請依提示修復表單錯誤
+                </p>
+                {% endif %}
 
                 <form action="" method="post">{% csrf_token %}
                 <table>
