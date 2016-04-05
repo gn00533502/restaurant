@@ -5,12 +5,6 @@ from django.shortcuts import render_to_response
 
 
 def here(request):
-    """first view func
-
-    :request: client request
-    :returns: django http response
-
-    """
     return HttpResponse('媽，我在這!')
 
 
