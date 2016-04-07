@@ -176,24 +176,13 @@ function init() {
     // Create the Google Map using out element and options defined above
     map = new google.maps.Map(mapElement, mapOptions);
 
-    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-    var icons = {
-    parking: {
-        icon: iconBase + 'parking_lot_maps.png'
-    },
-    library: {
-        icon: iconBase + 'library_maps.png'
-    },
-    info: {
-        icon: iconBase + 'info-i_maps.png'
-    }
-    };
+
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    //var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(25.062812,121.5164861);
+    var image = '../static/img/map-marker.png';
+    var myLatLng = new google.maps.LatLng(25.0624719,121.5185);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: icons[feature.type].icon
+        icon: image
     });
 }
