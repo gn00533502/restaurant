@@ -22,3 +22,6 @@ def welcome(request):
         return HttpResponse('Welcome!~'+request.GET['user_name'])
     else:
         return render_to_response('welcome.html', locals())
+
+def iron_man(request):
+    return render_to_response('iron_man.html',locals())
