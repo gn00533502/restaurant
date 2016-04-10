@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">IRON MAN</h1>
-                        <iframe width="400" height="200" src="https://www.youtube.com/embed/VVyoXimCrdQ?rel=0&amp;controls=0&amp;showinfo=0 &autoplay=1" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/VVyoXimCrdQ?rel=0&amp;controls=0&amp;showinfo=0 &autoplay=1" frameborder="0" allowfullscreen></iframe>
                         <font color="orange"><p class="intro-text">Genius, billionaire, playboy, philanthropist.<br>I AM </font><font color="red">IRON MAN</font></p>
                         <!-- 一個可捲到about的按鈕 -->
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -96,162 +96,33 @@
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About IRONMAN</h2>
-                <p>Iron Man (Tony Stark) is a fictional superhero appearing in American comic books published by Marvel Comics, as well as its associated media. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. He made his first appearance in Tales of Suspense</p>
-                <!-- <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p> -->
-                <p>An American billionaire playboy, business magnate, and ingenious engineer, Tony Stark suffers a severe chest injury during a kidnapping in which his captors attempt to force him to build a weapon of mass destruction. He instead creates a powered suit of armor to save his life and escape captivity. Later, Stark augments his suit with weapons and other technological devices he designed through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man, while at first concealing his true identity. Initially, Iron Man was a vehicle for Stan Lee to explore Cold War themes, particularly the role of American technology and business in the fight against communism.Subsequent re-imaginings of Iron Man have transitioned from Cold War themes to contemporary concerns, such as corporate crime and terrorism.</p>
-                
-            </div>
-        </div>
+    {% include 'intro.html' %}
     </section>
 
     <!-- Official Section -->
     <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <br><br><br><br><br><br>
-                    <!-- <font color="orange"><h2>點擊下面按鈕進入鋼鐵人三官網</h2></font> -->
-                    <a href="http://marvel.com/movies/movie/176/iron_man_3" class="btn btn-default btn-lg">Visit official Page</a>
-                </div>
-            </div>
-        </div>
+    {% include 'official.html' %}
     </section>
 
     <!-- Latest news Section  -->
     <section id="news" class="container content-section text-center">
-        <div class="row">
-            <div class="col-md-6">
-                <p>The Past is Prelude - Marvel's Captain America: Civil War</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6Fc-qgLGQ-I?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>  
-            </div>
-            <div class="col-md-6">
-                <p>Brothers in Arms - Marvel's Captain America: Civil War Featurette</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8K5QY8X91vI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                 <p>【美國隊長3: 英雄內戰】HD最終版中文電影預告</p>
-                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6Mwwl5iAWDQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
+    {% include 'news.html' %}
     </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Wallpaper</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{% static 'img/portfolio/cabin.png' %}" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{% static 'img/portfolio/cake.png' %}" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{% static 'img/portfolio/circus.png' %}" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{% static 'img/portfolio/game.png' %}" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{% static 'img/portfolio/safe.png' %}" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{% static 'img/portfolio/submarine.png' %}" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
+    {% include 'wallpaper.html' %}
     </section>
 
 
     <!-- me Section -->
     <section id="me" class="content-section text-center">
-        <div class="row">
-            <div class="col-md-3 col-md-offset-3">
-                <img src="{% static 'img/IMG_1732.jpg' %}" class="img-responsive" alt="Responsive image">
-            </div>
-            <div class="col-md-3">
-                <h2>關於我</h2>
-                <p>各位好，我是伊格西</p><br>
-                <p>我只是一個小小的鋼鐵人粉絲</p><br>
-                <p>分享一下自己熱愛鋼鐵人的網頁~</p>
-            </div>
-        </div>  
+    {% include 'me.html' %}
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-               <h2>Contact Eggsy Chen</h2>
-                <p>Feel free to email me to provide some feedback</p>
-                <p>歡迎交流分享</p>
-                <p><a href="mailto:gn00533502@gmail.com">gn00533502@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.facebook.com/boss.chen.543" class="btn btn-default btn-lg"><i class="fa fa-facebook"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/gn00533502" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/u/0/103971470423905558967/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    {% include 'contact.html' %}
     </section>
 
     <!-- Map Section -->
@@ -265,139 +136,6 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static 'img/portfolio/cabin.png' %}" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static 'img/portfolio/cake.png' %}" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static 'img/portfolio/circus.png' %}" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static 'img/portfolio/game.png' %}" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static 'img/portfolio/safe.png' %}" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static 'img/portfolio/submarine.png' %}" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- jQuery -->
     <script src="{% static "js/jquery.js" %}"></script>
@@ -409,12 +147,8 @@
     <script src="{% static "js/jquery.easing.min.js" %}"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrN75OBOz7O114oR4cHGsezh9T2Y51b4&callback=initMap"></script>
-    
 
-   <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrN75OBOz7O114oR4cHGsezh9T2Y51b4&callback=initMap"></script>
-    -->
     <!-- Custom Theme JavaScript -->
     <script src="{% static "js/grayscale.js" %}"></script>
 
