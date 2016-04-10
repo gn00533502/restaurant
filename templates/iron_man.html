@@ -1,0 +1,187 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="shortcut icon" href="{% static "favicon.ico" %}">
+    <link rel="Bookmark" href="{% static "favicon.ico" %}">
+
+    <meta charset="big5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IRON MAN</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Home</span> Iron Man
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">IRONMAN INTRO</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">official(ironman3)</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#me">ABOUT ME</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">IRON MAN</h1>
+                        <iframe width="400" height="200" src="https://www.youtube.com/embed/VVyoXimCrdQ?rel=0&amp;controls=0&amp;showinfo=0 &autoplay=1" frameborder="0" allowfullscreen></iframe>
+                        <font color="orange"><p class="intro-text">Genius, billionaire, playboy, philanthropist.<br>I AM </font><font color="red">IRON MAN</font></p>
+                        <!-- 一個可捲到about的按鈕 -->
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About IRONMAN</h2>
+                <p>Iron Man (Tony Stark) is a fictional superhero appearing in American comic books published by Marvel Comics, as well as its associated media. The character was created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby. He made his first appearance in Tales of Suspense</p>
+                <!-- <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p> -->
+                <p>An American billionaire playboy, business magnate, and ingenious engineer, Tony Stark suffers a severe chest injury during a kidnapping in which his captors attempt to force him to build a weapon of mass destruction. He instead creates a powered suit of armor to save his life and escape captivity. Later, Stark augments his suit with weapons and other technological devices he designed through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man, while at first concealing his true identity. Initially, Iron Man was a vehicle for Stan Lee to explore Cold War themes, particularly the role of American technology and business in the fight against communism.Subsequent re-imaginings of Iron Man have transitioned from Cold War themes to contemporary concerns, such as corporate crime and terrorism.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <br><br><br><br><br><br>
+                    <!-- <font color="orange"><h2>點擊下面按鈕進入鋼鐵人三官網</h2></font> -->
+                    <a href="http://marvel.com/movies/movie/176/iron_man_3" class="btn btn-default btn-lg">Visit official Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- me Section -->
+    <section id="me" class="content-section text-center">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <img src="{% static 'img/IMG_1732.jpg' %}" class="img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-3">
+                <h2>關於我</h2>
+                <p>我只是一個小小的鋼鐵人粉絲</p><br>
+                <p>分享一下自己熱愛鋼鐵人的網頁~</p>
+            </div>
+        </div>  
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+               <h2>Contact Eggsy Chen</h2>
+                <p>Feel free to email me to provide some feedback</p>
+                <p>歡迎交流分享</p>
+                <p><a href="mailto:gn00533502@gmail.com">gn00533502@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/boss.chen.543" class="btn btn-default btn-lg"><i class="fa fa-facebook"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gn00533502" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/u/0/103971470423905558967/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>公司位置</p>
+            <p>Copyright &copy; Your Website 2014</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static "js/jquery.easing.min.js" %}"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrN75OBOz7O114oR4cHGsezh9T2Y51b4&callback=initMap"></script>
+    
+
+   <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrN75OBOz7O114oR4cHGsezh9T2Y51b4&callback=initMap"></script>
+    -->
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static "js/grayscale.js" %}"></script>
+
+</body>
+
+</html>
