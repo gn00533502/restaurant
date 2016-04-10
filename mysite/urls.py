@@ -20,5 +20,6 @@ urlpatterns = patterns('',
     url(r'^restaurants_list/$', list_restaurants),
     #提供一個參數:餐廳id，以顯示對應的餐廳評價
     url(r'^comment/(\d{1,5})/$', comment),
-    url(r'^iron_man/$',iron_man)
+    #不輸入任何頁面名稱
+    url(r'^$',iron_man)
 )
